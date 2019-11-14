@@ -1,3 +1,7 @@
+.header-md:after{
+  background-image: none;
+}
+
 ion-toolbar {
   --background: transparent !important;
   --border-width: 0;
@@ -10,7 +14,7 @@ ion-toolbar {
 ion-content {
   --background: #ffff;
   transform: translateY(250px);
-  transition: 0.5s;
+  transition: 0.3s all;
   --padding-top: 30px;
   --padding-bottom: 40px;
 }
@@ -42,7 +46,7 @@ ion-content {
   font-size: 34px;
   //font-weight: 600;
   color: white;
-  transition: 0.5s all;
+  transition: 0.3s all;
 }
 
 .topSmall{
@@ -105,9 +109,8 @@ ion-content {
   position: fixed;
   width: 100%;
   height: auto;
-  top: 180px;
+  top: 185px;
   background: transparent;
-  box-shadow: none;
   display: flex;
   justify-content: center;
 
@@ -116,6 +119,7 @@ ion-content {
     --padding-top: 0;
     --padding-bottom: 0;
     --background: transparent;
+    box-shadow: none;
   }
   ion-item{
     --background: transparent;

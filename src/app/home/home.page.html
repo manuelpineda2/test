@@ -1,4 +1,4 @@
-<ion-header>
+<ion-header mode="md">
     <ion-toolbar>
         <ion-buttons slot="end">
             <ion-button>
@@ -16,14 +16,14 @@
     <div class="notification" [hidden]="topTitle[2]">
         <ion-card>
             <ion-item lines="none">
-                <ion-thumbnail slot="start">
+                <ion-avatar slot="start">
                     <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
-                </ion-thumbnail>
+                </ion-avatar>
                 <ion-label color="light">
                     <h2>Next Truck</h2>
                     <p>Toxic Waste</p>
                 </ion-label>
-                <ion-note slot="end">9am - 10am</ion-note>
+                <ion-note color="light" slot="end">9am - 10am</ion-note>
             </ion-item>
         </ion-card>
     </div>
@@ -39,9 +39,9 @@
 
     <div [className]="topbar">
             <ion-item lines="none">
-                <ion-thumbnail slot="start">
+                <ion-avatar slot="start">
                     <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
-                </ion-thumbnail>
+                </ion-avatar>
                 <ion-label>
                     <h2>Next Truck</h2>
                     <p>Toxic Waste</p>
