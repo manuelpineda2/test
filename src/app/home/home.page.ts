@@ -10,35 +10,32 @@ export class HomePage implements OnInit {
     @ViewChild(IonContent, {read: ElementRef, static: true}) contentArea: ElementRef;
     private observer: IntersectionObserver;
 
+    topbar = 'top-notif';
+    topTitle = ['top-title', 'top-subtitle', false];
+
     constructor(private renderer: Renderer2) {
     }
 
     ngOnInit() {
+
     }
 
     handleScroll(ev) {
         // console.log(ev);
-        let trans = false;
         let scrollTop;
-        let current;
+        let goUp;
         if (ev && ev.detail && ev.detail.scrollTop) {
             scrollTop = ev.detail.scrollTop;
-            trans = scrollTop >= 190;
-            if (scrollTop < 150) {
-                current = (200 - scrollTop);
-                console.log(current);
-                this.renderer.setStyle(this.contentArea.nativeElement, 'transform', `translate3d(0, ${current}px,0)`);
+            goUp = scrollTop > 20;
+            if (goUp) {
+                this.renderer.setStyle(this.contentArea.nativeElement, 'transform', `translateY(55px)`);
+                this.topbar = 'top-notif notif-visible';
+                this.topTitle = ['top-title topSmall', 'top-subtitle topSubHidden', true];
             } else {
-                console.log('Reached 200');
+                this.renderer.setStyle(this.contentArea.nativeElement, 'transform', `translateY(250px)`);
+                this.topbar = 'top-notif';
+                this.topTitle = ['top-title', 'top-subtitle', false];
             }
-
         }
-        // console.log(ev);
-
-        // if (trans === true) {
-        //     this.renderer.addClass(this.contentArea.nativeElement, 'no-transform');
-        // } else {
-        //     this.renderer.removeClass(this.contentArea.nativeElement, 'no-transform');
-        // }
     }
 }

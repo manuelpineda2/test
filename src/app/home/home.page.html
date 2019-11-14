@@ -6,90 +6,266 @@
             </ion-button>
         </ion-buttons>
     </ion-toolbar>
-    <div class="top-bar">
-        <div class="title">Corozal</div>
+    <div [className]="topTitle[1]">
+        <div>Corozal</div>
     </div>
+    <div [className]="topTitle[0]">
+        <div>Corozal Town</div>
+    </div>
+
+    <div class="notification" [hidden]="topTitle[2]">
+        <ion-card>
+            <ion-item lines="none">
+                <ion-thumbnail slot="start">
+                    <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+                </ion-thumbnail>
+                <ion-label color="light">
+                    <h2>Next Truck</h2>
+                    <p>Toxic Waste</p>
+                </ion-label>
+                <ion-note slot="end">9am - 10am</ion-note>
+            </ion-item>
+        </ion-card>
+    </div>
+
 </ion-header>
 
-<ion-content scroll-events="true" class="gg" (ionScroll)="handleScroll($event)">
-    <div class="top-test">
-        <div class="top-subtest"></div>
+<ion-content scroll-events="true" force-overscroll="true" (ionScroll)="handleScroll($event)">
+    <div class="topbar-container">
+        <div class="topbar">
+            <div class="topbar-chip"></div>
+        </div>
     </div>
 
-    <div class="ion-padding content-container">
-
-        The world is your oyster.
-        <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will
-            be your guide.</p>
-        <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will
-            be your guide.</p>
-        <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will
-            be your guide.</p>
-        <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will
-            be your guide.</p><p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will
-        be your guide.</p>
-        <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will
-            be your guide.</p>
-        <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will
-            be your guide.</p>
-        <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will
-            be your guide.</p>
-        <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will
-            be your guide.</p>
-        <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will
-            be your guide.</p>
-        <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will
-            be your guide.</p>
-        <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will
-            be your guide.</p>
-        <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will
-            be your guide.</p>
-        <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will
-            be your guide.</p>
-        <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will
-            be your guide.</p><p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will
-        be your guide.</p>
-        <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will
-            be your guide.</p>
-        <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will
-            be your guide.</p>
-        <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will
-            be your guide.</p>
-        <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will
-            be your guide.</p>
-        <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will
-            be your guide.</p>
-        <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will
-            be your guide.</p>
-        <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will
-            be your guide.</p>
-        <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will
-            be your guide.</p>
-        <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will
-            be your guide.</p>
-        <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will
-            be your guide.</p><p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will
-        be your guide.</p>
-        <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will
-            be your guide.</p>
-        <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will
-            be your guide.</p>
-        <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will
-            be your guide.</p>
-        <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will
-            be your guide.</p>
-        <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will
-            be your guide.</p>
-        <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will
-            be your guide.</p>
-        <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will
-            be your guide.</p>
-        <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will
-            be your guide.</p>
-        <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will
-            be your guide.</p>
+    <div [className]="topbar">
+            <ion-item lines="none">
+                <ion-thumbnail slot="start">
+                    <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+                </ion-thumbnail>
+                <ion-label>
+                    <h2>Next Truck</h2>
+                    <p>Toxic Waste</p>
+                </ion-label>
+                <ion-note slot="end">9am - 10am</ion-note>
+            </ion-item>
     </div>
 
+    <ion-list>
+        <ion-list-header>
+            <ion-label><h3>Forum</h3></ion-label>
+        </ion-list-header>
+        <ion-item lines="none" class="forum-card">
+            <ion-thumbnail slot="start">
+                <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+            </ion-thumbnail>
+            <ion-label>
+                <h3>The title of the form article</h3>
+                <p>this is ksadkjasdkjkasdksadlsakdksladksadjsadsdsadsadsad</p>
+            </ion-label>
+            <ion-note slot="end" mode="md">2 days</ion-note>
+        </ion-item>
+        <ion-item lines="none">
+            <ion-thumbnail slot="start">
+                <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+            </ion-thumbnail>
+            <ion-label>
+                <h3>The title of the form article</h3>
+                <p>this is ksadkjasdkjkasdksadlsakdksladksadjsadsdsadsadsad</p>
+            </ion-label>
+            <ion-note slot="end" mode="md">2 days</ion-note>
+        </ion-item>
+        <ion-item lines="none">
+            <ion-thumbnail slot="start">
+                <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+            </ion-thumbnail>
+            <ion-label>
+                <h3>The title of the form article</h3>
+                <p>this is ksadkjasdkjkasdksadlsakdksladksadjsadsdsadsadsad</p>
+            </ion-label>
+            <ion-note slot="end" mode="md">2 days</ion-note>
+        </ion-item>
+        <ion-item lines="none">
+            <ion-thumbnail slot="start">
+                <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+            </ion-thumbnail>
+            <ion-label>
+                <h3>The title of the form article</h3>
+                <p>this is ksadkjasdkjkasdksadlsakdksladksadjsadsdsadsadsad</p>
+            </ion-label>
+            <ion-note slot="end" mode="md">2 days</ion-note>
+        </ion-item>
+        <ion-item lines="none">
+            <ion-thumbnail slot="start">
+                <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+            </ion-thumbnail>
+            <ion-label>
+                <h3>The title of the form article</h3>
+                <p>this is ksadkjasdkjkasdksadlsakdksladksadjsadsdsadsadsad</p>
+            </ion-label>
+            <ion-note slot="end" mode="md">2 days</ion-note>
+        </ion-item>
+        <ion-item lines="none">
+            <ion-thumbnail slot="start">
+                <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+            </ion-thumbnail>
+            <ion-label>
+                <h3>The title of the form article</h3>
+                <p>this is ksadkjasdkjkasdksadlsakdksladksadjsadsdsadsadsad</p>
+            </ion-label>
+            <ion-note slot="end" mode="md">2 days</ion-note>
+        </ion-item>
+        <ion-item lines="none">
+            <ion-thumbnail slot="start">
+                <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+            </ion-thumbnail>
+            <ion-label>
+                <h3>The title of the form article</h3>
+                <p>this is ksadkjasdkjkasdksadlsakdksladksadjsadsdsadsadsad</p>
+            </ion-label>
+            <ion-note slot="end" mode="md">2 days</ion-note>
+        </ion-item>
+        <ion-item lines="none">
+            <ion-thumbnail slot="start">
+                <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+            </ion-thumbnail>
+            <ion-label>
+                <h3>The title of the form article</h3>
+                <p>this is ksadkjasdkjkasdksadlsakdksladksadjsadsdsadsadsad</p>
+            </ion-label>
+            <ion-note slot="end" mode="md">2 days</ion-note>
+        </ion-item>
 
+        <ion-item lines="none">
+            <ion-thumbnail slot="start">
+                <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+            </ion-thumbnail>
+            <ion-label>
+                <h3>The title of the form article</h3>
+                <p>this is ksadkjasdkjkasdksadlsakdksladksadjsadsdsadsadsad</p>
+            </ion-label>
+            <ion-note slot="end" mode="md">2 days</ion-note>
+        </ion-item>
+        <ion-item lines="none">
+            <ion-thumbnail slot="start">
+                <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+            </ion-thumbnail>
+            <ion-label>
+                <h3>The title of the form article</h3>
+                <p>this is ksadkjasdkjkasdksadlsakdksladksadjsadsdsadsadsad</p>
+            </ion-label>
+            <ion-note slot="end" mode="md">2 days</ion-note>
+        </ion-item>
+
+        <ion-item lines="none">
+            <ion-thumbnail slot="start">
+                <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+            </ion-thumbnail>
+            <ion-label>
+                <h3>The title of the form article</h3>
+                <p>this is ksadkjasdkjkasdksadlsakdksladksadjsadsdsadsadsad</p>
+            </ion-label>
+            <ion-note slot="end" mode="md">2 days</ion-note>
+        </ion-item>
+        <ion-item lines="none">
+            <ion-thumbnail slot="start">
+                <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+            </ion-thumbnail>
+            <ion-label>
+                <h3>The title of the form article</h3>
+                <p>this is ksadkjasdkjkasdksadlsakdksladksadjsadsdsadsadsad</p>
+            </ion-label>
+            <ion-note slot="end" mode="md">2 days</ion-note>
+        </ion-item>
+
+        <ion-item lines="none">
+            <ion-thumbnail slot="start">
+                <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+            </ion-thumbnail>
+            <ion-label>
+                <h3>The title of the form article</h3>
+                <p>this is ksadkjasdkjkasdksadlsakdksladksadjsadsdsadsadsad</p>
+            </ion-label>
+            <ion-note slot="end" mode="md">2 days</ion-note>
+        </ion-item>
+        <ion-item lines="none">
+            <ion-thumbnail slot="start">
+                <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+            </ion-thumbnail>
+            <ion-label>
+                <h3>The title of the form article</h3>
+                <p>this is ksadkjasdkjkasdksadlsakdksladksadjsadsdsadsadsad</p>
+            </ion-label>
+            <ion-note slot="end" mode="md">2 days</ion-note>
+        </ion-item>
+
+        <ion-item lines="none">
+            <ion-thumbnail slot="start">
+                <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+            </ion-thumbnail>
+            <ion-label>
+                <h3>The title of the form article</h3>
+                <p>this is ksadkjasdkjkasdksadlsakdksladksadjsadsdsadsadsad</p>
+            </ion-label>
+            <ion-note slot="end" mode="md">2 days</ion-note>
+        </ion-item>
+        <ion-item lines="none">
+            <ion-thumbnail slot="start">
+                <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+            </ion-thumbnail>
+            <ion-label>
+                <h3>The title of the form article</h3>
+                <p>this is ksadkjasdkjkasdksadlsakdksladksadjsadsdsadsadsad</p>
+            </ion-label>
+            <ion-note slot="end" mode="md">2 days</ion-note>
+        </ion-item>
+
+        <ion-item lines="none">
+            <ion-thumbnail slot="start">
+                <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+            </ion-thumbnail>
+            <ion-label>
+                <h3>The title of the form article</h3>
+                <p>this is ksadkjasdkjkasdksadlsakdksladksadjsadsdsadsadsad</p>
+            </ion-label>
+            <ion-note slot="end" mode="md">2 days</ion-note>
+        </ion-item>
+        <ion-item lines="none">
+            <ion-thumbnail slot="start">
+                <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+            </ion-thumbnail>
+            <ion-label>
+                <h3>The title of the form article</h3>
+                <p>this is ksadkjasdkjkasdksadlsakdksladksadjsadsdsadsadsad</p>
+            </ion-label>
+            <ion-note slot="end" mode="md">2 days</ion-note>
+        </ion-item>
+
+    </ion-list>
+
+
+    <!--    <ion-card class="forum-card">-->
+
+    <!--            <ion-card-header>-->
+    <!--                <img src="assets/shapes.svg">-->
+    <!--                <ion-card-title>Title of card</ion-card-title>-->
+    <!--            </ion-card-header>-->
+    <!--            <ion-card-content class="forum-card-subtitle">-->
+
+    <!--                <ion-button size="small" mode="ios">-->
+    <!--                    <ion-icon name="thumbs-up"></ion-icon>-->
+    <!--                    <ion-label>95 like</ion-label>-->
+    <!--                </ion-button>-->
+
+    <!--                <ion-button size="small" mode="ios">-->
+    <!--                    <ion-icon name="chatbubbles"></ion-icon>-->
+    <!--                    <ion-label>45 comments</ion-label>-->
+    <!--                </ion-button>-->
+
+    <!--                <ion-button size="small" mode="ios" disabled="true">-->
+    <!--                    <ion-label>2 days ago</ion-label>-->
+    <!--                </ion-button>-->
+
+    <!--            </ion-card-content>-->
+    <!--        </ion-card>-->
 
 </ion-content>
